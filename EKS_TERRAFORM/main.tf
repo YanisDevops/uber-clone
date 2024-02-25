@@ -95,7 +95,7 @@ resource "aws_eks_node_group" "example" {
 
   # Spécifiez les zones de disponibilité ici
   # Assurez-vous de spécifier les zones de disponibilité valides pour votre région AWS
-  availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  #availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
   
   # Ensure that IAM Role permissions are created before and deleted after EKS Node Group handling.
   # Otherwise, EKS will not be able to properly delete EC2 Instances and Elastic Network Interfaces.
