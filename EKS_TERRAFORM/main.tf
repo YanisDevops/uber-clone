@@ -44,7 +44,7 @@ resource "aws_eks_cluster" "example" {
 
   vpc_config {
     subnet_ids = local.use_manual_subnets ? [
-      "us-east-1a",
+      #"us-east-1a",
       "us-east-1b",
       "us-east-1c",
       "us-east-1d",
