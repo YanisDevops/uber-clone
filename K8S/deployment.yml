@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: uber
-        image: yanishub1/uber:13
+        image: yanishub1/uber:14
         ports:
         - containerPort: 3000  # Port your application listens on
 
