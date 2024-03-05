@@ -2,9 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: uber-deployment
-  namespace: uber-space
 spec:
-  replicas: 1  # Number of desired replicas
+  replicas: 1
   selector:
     matchLabels:
       app: uber
@@ -14,8 +13,7 @@ spec:
         app: uber
     spec:
       containers:
-      - name: uber
-        image: yanishub1/uber:8
-        ports:
-        - containerPort: 3000  # Port your application listens on
-
+        - name: uber
+          image: yanishub1/uber:8
+          ports:
+            - containerPort: 3000  # Your Node.js application should listen on port 3000
