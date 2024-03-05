@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: uber
-          image: yanishub1/uber:8
+          image: yanishub1/uber:2
           ports:
             - containerPort: 3000  # Your Node.js application should listen on port 3000
